@@ -1,24 +1,45 @@
 .navbar {
-  background-color: #270570;
+  background-color: black;
+ 
+}
+.nav-link{
+   
+    box-shadow: inset 0 0 0 0 #7fffd4;
+    color: #7fffd4;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+.nav-link:hover {
+  color: #7fffd4;
+  box-shadow: inset 200px 0 0 0 black;;
+}
+.imagem-logo{
+  transform: translatex(-60%);
 }
 
-
-
-.jumbotron {
-  background-color: #F58F51;
-}
 .btn {
-  background-color: #270570;
+  background-color: black;
+  color: #7fffd4;
+ 
+}
+
+.cabe{
+  opacity: 0.6;
+  border-radius: 100%;
 }
 main {
   display:flex;
   
+  
 }
+
 
 /* tamanho do carroseul */
 .carousel {
   width: 700px;
 }
+
 
 h3 {
   align-items: center;
@@ -28,14 +49,13 @@ section{
   display: flex;
 }
 
-.ofertas {
- transform: translateY(16%);
-  
-}
-.oferta-contanier {
+.contanier-oferta {
   display: flex;
   border-radius: 2%;
-  width: 50%;
+  width: 40%;
+  transform: translateY(10.5%);
+  margin-left: 5%;
+  
 }
 
 .imagem-oferta {
@@ -47,7 +67,7 @@ section{
 
 .borda-bot {
   background-color: aliceblue;
-  width: 396px;
+  width: 100%;
   border-bottom-left-radius: 2%;
   border-bottom-right-radius: 2%;
   height: 110px;
@@ -62,6 +82,7 @@ section{
 .contanier-header {
   display: flex;
 }
+
 .text-footer {
   background-color: #36059e;
 }
@@ -81,5 +102,24 @@ text-align: center;
 
  }
 p{
+  background-color: aliceblue;
   font-style: bold;
+}
+.espaco{
+  
+  width: 100%;
+  height: 250px;
+  
+}
+
+footer{
+  border-top: 1px solid gray;
+  width: 100%;
+
+}
+#twitter{
+  color: black;
+}
+#twitter:hover{
+  color: #7fffd4;
 }

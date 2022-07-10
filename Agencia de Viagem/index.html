@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
+<div class="contanier">
   <head>
     <title>Home</title>
     <!-- Required meta tags -->
@@ -28,11 +30,11 @@
     <!-- inicio da navbar -->
     <div class="contanier">
       <div class="row">
-        <div class="col-sm-12">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-       <img src="imagem/logo.jpeg" alt="logo" width="150px
-       ">
+        <div class="col">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container">
+       <img class="imagem-logo" src="imagem/logoverde.png" alt="logo" width="45px" height="45px" 
+       >
         <button
           class="navbar-toggler"
           type="button"
@@ -47,15 +49,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
+              <a class="nav-link active" aria-current="page" href="index.html" style="color:#7fffd4;"
                 >HOME</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="Destino.html">DESTINO</a>
+              <a class="nav-link active" href="Destino.html" style="color:#7fffd4;">DESTINO</a>
             </li>
            
-                <a class="nav-link active" href="Contato.html" >
+                <a class="nav-link active" href="Contato.html" style="color:#7fffd4;">
                   CONTATO
                 </a>
                 
@@ -65,6 +67,7 @@
                 href="promocoes.html"
                 tabindex="-1"
                 aria-disabled="true"
+                style="color:#7fffd4;"
                 >PROMOÇOES</a
               >
             </li>
@@ -76,7 +79,7 @@
               placeholder="Destino"
               aria-label="Search"
             />
-            <button class="btn btn-outline-light" type="submit">
+            <button class="btn btn-outline-info" type="submit">
               Procurar
             </button>
           </form>
@@ -85,48 +88,99 @@
     </nav>
         </div>
       </div>
-  </div>
-    <!-- fim da navbar -->
-  </head>
-  <body>
-    <div class="contanier">
-      <div class="row, align-items-center">
-        <div class="col-sm-12">
-          <!-- inicio jumbotron -->
-          <div class="jumbotron">
-            <h1 class="display-5 " style="color:white; font-family: Helvetica Neue Helvetica, sans-serif;" >TOUR.ISTANDO</h1>
-            <p class="lead" style="color:rgb(4, 3, 78) ;"><strong> VIAGEM COM A GENTE </strong></p>
-            <hr class="my-lg-1" />
-            <p style="color:rgb(4, 3, 78)"><strong>
-              VOCÊ TEM O SONHO DE CONHECER ALGUM LUGAR? PODE DEIXAR QUE NOS, AJUDAMOS A RELIZAR ELE.
-              
-            </strong>
-            </p>
-            <a
-              class="btn btn-light btn-outline-light btn-md"
-              href="Contato.html"
-              role="button"
-              >Saiba mais</a
-            >
-          </div>
-          <!-- fim jumbotron -->
-        </div>
-      </div>
     </div>
-    <header>
-      <div class="contanier-header">
+    <!-- fim da navbar -->
+   </head>
+    <body>
+     <div class="contanier ">
+      
+          <div style='position:relative; align-items: center; align-content: space-between;'>
+            <img class="fundo"src="imagem/maldivas1.jpg" alt="" width="100%" height="500px">
+      
+        
+            <div style='position:absolute; top:170px; left: 180px;'>
+              <section class="container-fuid align-content-between">
+                <div class="container py-2 mb-3 ">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="input-group mb-4">
+                                <span class="input-group-text" style="background-color:black; color: #7fffd4;" >Destino:</span>
+                                <input type="text" aria-label="cidade-destino" class="form-control" placeholder="Aeroporto...">
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="input-group mb-4">
+                                <select class="form-select" id="inputSelectAdulto" aria-label="select user">
+                                    <option selected>Adultos a partir de 18 anos</option>
+                                    <option value="1">
+                                        <input type="number" id="qtAdultos" placeholder="0"
+                                            style="width:50px ; padding:0 4px; border: 1px solid #0808003b;">
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="input-group mb-4">
+                                <select class="form-select" id="inputSelectCrianca" aria-label="select user criancas">
+                                    <option selected>Menores de 3 a 17 anos</option>
+                                    <option value="2">
+                                        <input type="number" name="criancas" id="qtCriancas" placeholder="0"
+                                            style="width:50px ; padding:0 4px; border: 1px solid #0808003b">
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row ">
+        
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="input-group mb-4">
+                                <span class="input-group-text ajust-capture-sm" style="background-color:black; color: #7fffd4;">Check-in</span>
+                                <input type="date" aria-label="Check-in-user" class="form-control">
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="input-group mb-4">
+                                <span class="input-group-text ajust-capture-sm" style="background-color:black; color: #7fffd4;">Check-out</span>
+                                <input type="date" aria-label="Check-out-user" class="form-control">
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="d-grid gap-2 mb-4">
+                                <input class="btn btn-outline-info" type="submit" value="Pequisar">
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+              </section>
+        
+            </div>
+          </div>
+          
+            
+            <hr class="my-1 " />    
+     </div>
+     <header>
+        <div class="contanier-header">
         <div class="row  w-100 ">
           <div class="col-sm-12">
-           <h3>LUGARES MAIS COBIÇADOS</h3>
+           <h3 style="color: black;">LUGARES MAIS COBIÇADOS</h3>
           </div>
+          <hr>
          
           </div>
         </div>
-      </div>
-  </header>
-    <main>
-    <!-- inicio carroseul -->
-    <div class="container">
+     </header>
+  
+  <main>
+
+       <!-- inicio carroseul -->
       <div
         id="carouselExampleControls"
         class="carousel slide"
@@ -185,15 +239,15 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
-    <!-- fim carroseul -->
-
-      <div class="contanier">
-        <!-- PROMO -->
-        <div class="row-cols-sm-12">
-        <div class="col-sm-12">
-      <div class="ofertas">
-        <div class="oferta-contanier">
+      
+       <!-- fim carroseul -->
+       
+         <!-- PROMO -->
+      <div class="contanier-oferta">
+        <div class="row ">
+        <div class="col ">
+        <div class="ofertas">
+        <div class="oferta">
           <div class="texto-ofertas">
             <img class="imagem-oferta" src="imagem/imagem oferta(640x427).jpg" />
             <div class="borda-bot">
@@ -206,50 +260,53 @@
                 href="promocoes.html"
               >
               <a
-              class="btn btn-light btn-outline-light btn-md"
+              class="btn btn-light btn-outline-info btn-md"
               href="promocoes.html"
               role="button"
               >Ver Ofertas</a
             >
-           <!-- FIM PROMO -->
+           
           </a>
+          </div>
+          </div>
+         </div>
+         </div>
+         </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-  </div>
-  </div>
-  </main>
-         
+         <!-- FIM PROMO --> 
+
+  </main> 
+
      <!-- footer -->
      <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-sm-12 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <img src="imagem/logo.jpeg" alt="logo" width="105"> 
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 ">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1 ">
+          <img src="imagem/logo1.2.png" alt="logo" width="50px"> 
           </a>
-          <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+          <span class=" texto mb-3 mb-md-0 text-dark">© 2022 Company, Inc</span>
         </div>
     
-        <ul class="nav col-sm-12 justify-content-end list-unstyled d-flex">
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
           <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram" ></use></svg></a></li>
         </ul>
+        
       </footer>
-      <!-- fim footer -->
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
+     </div>
+     <!-- fim footer -->
+     <!-- Bootstrap JavaScript Libraries -->
+     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
       crossorigin="anonymous"
     ></script>
-
-    <script
+     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
       integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"
     ></script>
   </body>
+</div>
 </html>
