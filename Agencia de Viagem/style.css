@@ -24,16 +24,19 @@
  
 }
 
-.cabe{
-  opacity: 0.6;
-  border-radius: 100%;
-}
+
 main {
   display:flex;
-  
+   
+}
+#back{
+  background-image: url(imagem/maldivas1.jpg);
+  background-position-y:center;
+  background-position-x: center;
+  align-items: center;
+  align-content: center;
   
 }
-
 
 /* tamanho do carroseul */
 .carousel {
@@ -50,11 +53,11 @@ section{
 }
 
 .contanier-oferta {
-  display: flex;
   border-radius: 2%;
   width: 40%;
   transform: translateY(10.5%);
   margin-left: 5%;
+  height: 90vh;
   
 }
 
