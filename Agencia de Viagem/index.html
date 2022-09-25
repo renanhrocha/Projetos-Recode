@@ -149,7 +149,7 @@
                     type="text"
                     aria-label="cidade-destino"
                     class="form-control"
-                    placeholder="Aeroporto..."
+                    placeholder="Destino..."
                   />
                 </div>
               </div>
@@ -237,11 +237,50 @@
 
               <div class="col-lg-4 col-sm-12">
                 <div class="d-grid gap-2 mb-4">
-                  <input
+                  <button
                     class="btn btn-outline-info"
-                    type="submit"
-                    value="Pequisar"
-                  />
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    
+                  >Pesquisar</button>
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Cotação enviada
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          Sua cotação foi enviada com sucesso,em ate 48
+                          horas,enviaremos a proposta.
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Confirmar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Fim modal -->
                 </div>
               </div>
             </div>
