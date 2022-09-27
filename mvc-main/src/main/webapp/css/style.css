@@ -1,0 +1,128 @@
+.navbar {
+  background-color: black;
+ 
+}
+.nav-link{
+   
+    box-shadow: inset 0 0 0 0 #7fffd4;
+    color: #7fffd4;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+.nav-link:hover {
+  color: #7fffd4;
+  box-shadow: inset 200px 0 0 0 black;;
+}
+.imagem-logo{
+  transform: translatex(-60%);
+}
+
+.btn {
+  background-color: black;
+  color: #7fffd4;
+ 
+}
+
+
+main {
+  display:flex;
+   
+}
+#back{
+  background-image: url(imagem/maldivas1.jpg);
+  background-position-y:center;
+  background-position-x: center;
+  align-items: center;
+  align-content: center;
+  
+}
+
+/* tamanho do carroseul */
+.carousel {
+  width: 700px;
+}
+
+
+h3 {
+  align-items: center;
+  margin-left: 20px;
+}
+section{
+  display: flex;
+}
+
+.contanier-oferta {
+  border-radius: 2%;
+  width: 40%;
+  transform: translateY(10.5%);
+  margin-left: 5%;
+  height: 90vh;
+  
+}
+
+.imagem-oferta {
+  
+  width: 100%;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+
+.borda-bot {
+  background-color: aliceblue;
+  width: 100%;
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+  height: 110px;
+}
+.btn-text {
+  background-color: #270570;
+  width: 30%;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 5%;
+}
+.contanier-header {
+  display: flex;
+}
+
+.text-footer {
+  background-color: #36059e;
+}
+/* style promo */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+text{
+font-size: 20px;
+font-style: bold;
+align-items: center;
+text-align: center;
+
+ }
+p{
+  background-color: aliceblue;
+  font-style: bold;
+}
+.espaco{
+  
+  width: 100%;
+  height: 250px;
+  
+}
+
+footer{
+  border-top: 1px solid gray;
+  width: 100%;
+
+}
+#twitter{
+  color: black;
+}
+#twitter:hover{
+  color: #7fffd4;
+}
